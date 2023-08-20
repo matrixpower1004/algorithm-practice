@@ -23,3 +23,8 @@ int num = Character.getNumericValue(c1);
 - StringTokenizer 사용 시 불필요한 hasMoreTokens() 체크 로직은 빼자.
 - 합배열 공식 : `S[i] = S[i - 1] + A[i]`
 - 구간 합 공식 : `S[toIndex] - S[fromIndex - 1]`
+## 백준 11660 구간 합 구하기 5
+- 처음 구간합을 구할 때 행의 합만 구하고 열의 합을 구할 아이디어를 떠올리지 못했다.
+- 2차원 배열 index : `int[][] arr = new int[row][column]`
+- 합배열 공식 : `D[i][j] = D[i][j-1] + D[i-1][j] - D[i-1][j-1] + A[i][j]`
+- X1, Y1, X2, Y2 구간 합을 구하는 공식 : `D[X2][Y2] - D[X1-1][y2] - D[X2][Y1-1] + D[X1-1][Y1-1]`
