@@ -24,7 +24,7 @@ public class Main {
         // 합배열 생성
         int[] sumArrays = new int[countsNo + 1]; // index 1부터 저장을 하므로 수의 개수 + 1을 해준다.
         sumArrays[0] = 0;
-        st.hasMoreTokens()
+        st.hasMoreTokens();
         st = new StringTokenizer(br.readLine());
 
         for (int i = 1; i < countsNo + 1; i++) {
