@@ -53,10 +53,17 @@ int num = Character.getNumericValue(c1);
 
 ## 백준 12891 DNA 비밀번호
 * https://www.acmicpc.net/problem/12891
-- 최초 부분 문자열 처리를 끝내고 ACGT의 문자열 개수가 요구하는 문자열 개수와 맞는지 체크해야 했는데, 부분 문자열 처리를 하는 도중에 계속 ACGT 문자의 개수를 체크하는 실수를 했다. 디버거 돌렸을 때도 값은 체크된 값은 정상적으로 나왔기에 로직 이상을 발견하는데 시간이 많이 걸렸다.  
+- 최초 부분 문자열 처리 loop가 종료된 후 ACGT의 문자열 개수가 요구하는 문자열 개수와 맞는지 체크해야 했는데, loop 도는 중에 계속 ACGT 문자의 개수를 체크하는 실수를 했다.
+- 디버거 돌렸을 때도 체크된 값은 정상적으로 나왔기에 로직 이상을 발견하는데 시간이 많이 걸렸다.  
 
 ## 백준 11003 최솟값 찾기
+- https://www.acmicpc.net/problem/11003
 - ArrayDeque 클래스는 스택으로 사용할 경우 Stack 보다 빠르며, Queue 로 사용 할 경우 LinkedList 보다 빠를 가능성이 높다.
 - ArrayDeque 에 Null 은 허용되지 않는다. 
 - https://www.baeldung.com/java-array-deque
 - https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html
+
+## 백준 1874 스택 수열
+- https://www.acmicpc.net/problem/1874
+- 동시성 문제가 없다면 Stack 보다는 속도가 빠른 ArrayDeque 를 사용하자. Deque 의 addLast() 와 pollLast() 로 스택과 같은 기능을 구현할 수 있다. 
+- 코드 작성보다 문제의 지문과 출력 예제를 보고 문제의 요구 사항을 파악하는 게 더 어려웠다.
