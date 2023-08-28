@@ -67,3 +67,8 @@ int num = Character.getNumericValue(c1);
 - https://www.acmicpc.net/problem/1874
 - 동시성 문제가 없다면 Stack 보다는 속도가 빠른 ArrayDeque 를 사용하자. Deque 의 addLast() 와 pollLast() 로 스택과 같은 기능을 구현할 수 있다. 
 - 코드 작성보다 문제의 지문과 출력 예제를 보고 문제의 요구 사항을 파악하는 게 더 어려웠다.
+
+## 백준 17298 오큰수
+- https://www.acmicpc.net/problem/17298
+- 반복문에서 출력을 해야 하는 경우 BufferedWriter를 쓰기 보다는 StringBuilder를 사용하여 `append()`를 해주고 나중에 `System.out.print()`를 해주는 게 조금 더 빠른 것 같다.
+- 배열을 역순으로 탐색하면서 오큰수를 계산하는 아이디어를 떠올리지 못했다.
