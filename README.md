@@ -72,3 +72,12 @@ int num = Character.getNumericValue(c1);
 - https://www.acmicpc.net/problem/17298
 - 반복문에서 출력을 해야 하는 경우 BufferedWriter를 쓰기 보다는 StringBuilder를 사용하여 `append()`를 해주고 나중에 `System.out.print()`를 해주는 게 조금 더 빠른 것 같다.
 - 배열을 역순으로 탐색하면서 오큰수를 계산하는 아이디어를 떠올리지 못했다.
+
+## 백준 2164 카드2
+- https://www.acmicpc.net/problem/2164
+- Queue와 Stack의 `poll()` 했을 때 데이터가 빠지는 위치를 헷갈려서 슈도 코드 작성에 애를 먹었다. Stack의 LIFO, Queue의 FIFO 특징을 잘 기억해두자.
+
+## 백준 11286 절댓값 힙
+- https://www.acmicpc.net/problem/11286
+- `PriorityQueue` 대해서 알고 있고, customizing 할 수 있는지가 문제 풀이의 핵심이었는데 이 아이디어를 떠올리지 못했다.
+
