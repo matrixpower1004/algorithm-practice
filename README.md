@@ -47,37 +47,41 @@ int num = Character.getNumericValue(c1);
 - https://www.acmicpc.net/problem/1940
 - 문제를 제대로 읽지 않아 두 수의 합을 구하는 것을 지나쳐서 어떤 알고리즘을 적용해야 하는지 고민만 했다. 문제의 요구사항과 예제 입출력을 잘 살펴보자. 
 
-## 백준 1253 좋은 수
+### 백준 1253 좋은 수
 - https://www.acmicpc.net/problem/1253
 - 투 포인터의 위치와 좋은 수의 배열에서의 위치는 별개로 생각해야 하는데 투 포인터의 위치를 좋은 수의 위치와 합쳐서 생각하는 오류가 있었다. 
 
-## 백준 12891 DNA 비밀번호
+### 백준 12891 DNA 비밀번호
 * https://www.acmicpc.net/problem/12891
 - 최초 부분 문자열 처리 loop가 종료된 후 ACGT의 문자열 개수가 요구하는 문자열 개수와 맞는지 체크해야 했는데, loop 도는 중에 계속 ACGT 문자의 개수를 체크하는 실수를 했다.
 - 디버거 돌렸을 때도 체크된 값은 정상적으로 나왔기에 로직 이상을 발견하는데 시간이 많이 걸렸다.  
 
-## 백준 11003 최솟값 찾기
+### 백준 11003 최솟값 찾기
 - https://www.acmicpc.net/problem/11003
 - ArrayDeque 클래스는 스택으로 사용할 경우 Stack 보다 빠르며, Queue 로 사용 할 경우 LinkedList 보다 빠를 가능성이 높다.
 - ArrayDeque 에 Null 은 허용되지 않는다. 
 - https://www.baeldung.com/java-array-deque
 - https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html
 
-## 백준 1874 스택 수열
+### 백준 1874 스택 수열
 - https://www.acmicpc.net/problem/1874
 - 동시성 문제가 없다면 Stack 보다는 속도가 빠른 ArrayDeque 를 사용하자. Deque 의 addLast() 와 pollLast() 로 스택과 같은 기능을 구현할 수 있다. 
 - 코드 작성보다 문제의 지문과 출력 예제를 보고 문제의 요구 사항을 파악하는 게 더 어려웠다.
 
-## 백준 17298 오큰수
+### 백준 17298 오큰수
 - https://www.acmicpc.net/problem/17298
 - 반복문에서 출력을 해야 하는 경우 BufferedWriter를 쓰기 보다는 StringBuilder를 사용하여 `append()`를 해주고 나중에 `System.out.print()`를 해주는 게 조금 더 빠른 것 같다.
 - 배열을 역순으로 탐색하면서 오큰수를 계산하는 아이디어를 떠올리지 못했다.
 
-## 백준 2164 카드2
+### 백준 2164 카드2
 - https://www.acmicpc.net/problem/2164
 - Queue와 Stack의 `poll()` 했을 때 데이터가 빠지는 위치를 헷갈려서 슈도 코드 작성에 애를 먹었다. Stack의 LIFO, Queue의 FIFO 특징을 잘 기억해두자.
 
-## 백준 11286 절댓값 힙
+### 백준 11286 절댓값 힙
 - https://www.acmicpc.net/problem/11286
 - `PriorityQueue` 대해서 알고 있고, customizing 할 수 있는지가 문제 풀이의 핵심이었는데 이 아이디어를 떠올리지 못했다.
 
+### 백준 1377 버블소트
+- https://www.acmicpc.net/problem/1377
+- 처음에는 배열을 정렬해서 index 위치를 비교한다는 아이이더를 떠올리지 못해따.
+- 굳이 배열을 정렬할 필요 없이 우선순위큐를 이용하면 배열의 정렬에 드는 O(nlogn)의 시간을 줄일 수 있다.
