@@ -86,6 +86,7 @@ int num = Character.getNumericValue(c1);
 - 처음에는 배열을 정렬해서 index 위치를 비교한다는 아이이더를 떠올리지 못해다.
 - 굳이 배열을 정렬할 필요 없이 우선순위큐를 이용하면 배열의 정렬에 드는 O(nlogn)의 시간을 줄일 수 있다.
 
+# 패스트캠퍼스 알고리즘 코딩테스트 with Java 강의
 ### 백준 2744 대소문자 변환
 - https://www.acmicpc.net/problem/2744
 - 처음에 입력된 문자열을 char[] 배열로 변환했는데 굳이 변환할 필요가 없었다.
@@ -95,3 +96,15 @@ int num = Character.getNumericValue(c1);
 - https://www.acmicpc.net/problem/1919
 - 최초 아이디어는 두 문자열을 비교해서 같은 문자가 있는지 없는지 비교하는 것이었는데 이 아이디어는 두 문자열이 같을 때만 유효한 아이디어였다.
 - 두 문자열의 길이가 다를 수 있으므로 각 문자열의 알파벳 갯수를 세서 차이만큼 result에 더해주면 되었는데 이 아이디어를 떠올리짐 못했다.
+
+### 백준 1543 문서검색
+- https://www.acmicpc.net/problem/1543
+- `String.equals()`로 비교할 생각만 하고 indexOf로 문자열의 위치를 검색하는 아이디어를 떠올리지 못했다.
+- `replace()` 함수로 문자열을 지우고 남은 문자열의 길이로 답을 구할 수도 있다.
+
+### 백준 1157 단어 공부
+- https://www.acmicpc.net/problem/1157
+- 반복문을 돌 때 char를 직접 지정해서 돌면 많이 사용된 알파벳 저장시 명시적 type casting을 생략할 수 있다.
+```java
+for (char alp = 'A'; alp <= 'Z'; alp++) { }
+```
