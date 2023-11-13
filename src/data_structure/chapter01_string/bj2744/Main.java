@@ -1,4 +1,4 @@
-package string.bj2744;
+package data_structure.chapter01_string.bj2744;
 
 import java.io.BufferedReader;
 import java.io.IOException;

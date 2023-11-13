@@ -1,4 +1,4 @@
-package time_complexity.bj10158;
+package data_structure.chapter02_time_complexity.bj10158;
 
 import java.io.BufferedReader;
 import java.io.IOException;
