@@ -100,7 +100,7 @@ int num = Character.getNumericValue(c1);
 
 ### 백준 1543 문서검색
 - https://www.acmicpc.net/problem/1543
-- `String.equals()`로 비교할 생각만 하고 indexOf로 문자열의 위치를 검색하는 아이디어를 떠올리지 못했다.
+- `String.equals()`로 비교할 생각만 하고 `indexOf`로 문자열의 위치를 검색하는 아이디어를 떠올리지 못했다.
 - `replace()` 함수로 문자열을 지우고 남은 문자열의 길이로 답을 구할 수도 있다.
 
 ### 백준 1157 단어 공부
@@ -117,3 +117,18 @@ for (char alp = 'A'; alp <= 'Z'; alp++) { }
 ### 백준 10431 줄세우기
 - https://www.acmicpc.net/problem/10431
 - 삽입 정렬의 개념을 적용하면 풀 수 있는 문제였는데 삽입 정렬의 아이디어를 떠올리지 못했다. 삽입 정렬 알고리즘에 대해서 다시 복습하자.
+### 백준 15649 N과 M(1), 백준 15651 N과 M(3)
+https://www.acmicpc.net/problem/15651
+https://www.acmicpc.net/problem/15649
+- 완전 탐색 알고리즘을 사용해야 풀 수 있는 문제 유형이었다. 재귀 함수 호출 포인트를 잡는 연습을 많이 해야겠다.
+- 완전 탐색 알고리즘의 시간 복잡도와 공간 복잡도 정리 
+
+  | 중복 | 순서 | 시간 복잡도                                                | 공간 복잡도 |
+  | --- | --- |-------------------------------------------------------| --- |
+  | YES | YES | $\large O(N^M)$                                       | $O(M)$ |
+  | NO | YES | $\large O(^N_MP=O \left( \frac{N!}{(N-M)!} \right)$   | $O(M)$ |
+  | YES | NO | $\large O(N^M)$ 보단 작음                                 | $O(M)$ |
+  | NO | NO | $\large O(^N_MP=O \left( \frac{N!}{M!(N-M)!} \right)$ | $O(M)$ |
+
+
+
