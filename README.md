@@ -1,4 +1,5 @@
-# 자료구조와 알고리즘 공부(Do it! 알고리즘 코딩테스트)
+# 자료구조와 알고리즘 공부 오답 노트 및 공부 정리
+# Do it! 알고리즘 코딩테스트
 ## Chapter 3 자료구조
 ### 백준 11720 숫자의 합 구하기
 - https://www.acmicpc.net/problem/11720
@@ -83,8 +84,8 @@ int num = Character.getNumericValue(c1);
 
 ### 백준 1377 버블소트
 - https://www.acmicpc.net/problem/1377
-- 처음에는 배열을 정렬해서 index 위치를 비교한다는 아이이더를 떠올리지 못해다.
-- 굳이 배열을 정렬할 필요 없이 우선순위큐를 이용하면 배열의 정렬에 드는 O(nlogn)의 시간을 줄일 수 있다.
+- 처음에는 배열을 정렬해서 index 위치를 비교한다는 아이디어를 떠올리지 못해다.
+- 굳이 배열을 정렬할 필요 없이 우선순위 큐를 이용하면 배열의 정렬에 드는 O(nlogn)의 시간을 줄일 수 있다.
  
 # 패스트캠퍼스 알고리즘 코딩테스트 with Java 강의
 ## Chapter 01. 문자열
@@ -117,9 +118,13 @@ for (char alp = 'A'; alp <= 'Z'; alp++) { }
 ### 백준 10431 줄세우기
 - https://www.acmicpc.net/problem/10431
 - 삽입 정렬의 개념을 적용하면 풀 수 있는 문제였는데 삽입 정렬의 아이디어를 떠올리지 못했다. 삽입 정렬 알고리즘에 대해서 다시 복습하자.
-### 백준 15649 N과 M(1), 백준 15651 N과 M(3)
-https://www.acmicpc.net/problem/15651
-https://www.acmicpc.net/problem/15649
+## Part 5. 단기완성 알고리리즘
+## 완전 탐색(Brute Force)
+### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
+- https://www.acmicpc.net/problem/15649
+- https://www.acmicpc.net/problem/15650
+- https://www.acmicpc.net/problem/15651
+- https://www.acmicpc.net/problem/15652
 - 완전 탐색 알고리즘을 사용해야 풀 수 있는 문제 유형이었다. 재귀 함수 호출 포인트를 잡는 연습을 많이 해야겠다.
 - 완전 탐색 알고리즘의 시간 복잡도와 공간 복잡도 정리 
 
@@ -130,5 +135,7 @@ https://www.acmicpc.net/problem/15649
   | YES | NO | $\large O(N^M)$ 보단 작음                                 | $O(M)$ |
   | NO | NO | $\large O(^N_MP=O \left( \frac{N!}{M!(N-M)!} \right)$ | $O(M)$ |
 
-
+### 백준 14888 연산자 끼워넣기
+- https://www.acmicpc.net/problem/14888
+- 숫자의 순서가 바뀌면 안되고, 연산자의 순서는 바뀌면서 연산 결과 최대 값과 최소 값을 찾아야 하는데 연산자를 어떻게 섞어야 할지 아이디어를 떠올리지 못해서 결국 강의를 보고 말았다. 알고리즘이 단시일내에 해결되는 게 아닌데 마음만 너무 앞서 갔던 것 같다. 기본으로 돌아가서 내가 어떤 부분을 모르고 어떤 부분에 강정이 있는지 차분하게 점검하는 시간을 가져야 겠다.     
 
