@@ -183,6 +183,9 @@ for (char alp = 'A'; alp <= 'Z'; alp++) { }
 int a = Character.getNumericValue(x);
 int a = x - '0';
 ```
+### 백준 1233 주사위
+- https://www.acmicpc.net/problem/1233
+- 세 주사위의 합을 배열의 index로 사용해 놓고, 정작 index와 index에 저장된 값을 혼동해서 버그를 찾는데 불필요한 시간을 사용했다. 다음에는 슈도 코드를 꼭 작성해서 흐름을 머리속에 그려두고 코딩을 하자. 
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
