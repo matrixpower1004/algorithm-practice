@@ -196,6 +196,10 @@ int a = x - '0';
 - https://www.acmicpc.net/problem/1110
 - while 보다는 do - while이 코드가 더 깔끔해지는 문제였다. 종료 조건이 처음에 N과 같고 계속 변화하다가 다시 N가 같아진다면 do - while을 고려해 보자. 
 
+### 백준 4673 셀프 넘버
+- https://www.acmicpc.net/problem/4673
+- 인자로 넘긴 수 x와, x의 각 자리수를 더하는 함수에서 넘겨받은 x에 합산을 하지 않고 0부터 합산하는 로직 오류가 있었다. 
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
