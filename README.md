@@ -213,6 +213,10 @@ int a = x - '0';
 - 중복 제거를 위해서 Set을 이용해서 입력을 받고 -> Set을 List로 변환 후 정렬했는데 변환 시간이 생각보다 오래 걸렸다. 정렬을 먼저 하면 같은 문자열끼리 모여 있기 때문에 중복을 제거하는데 오히려 효과적이었다.
 - HashSet 보다 LinkedHashSet에서 중복을 제거하는 시간이 조금 더 걸렸다. 참고하자.
 
+### 백준 10814 나이순 정렬
+- https://www.acmicpc.net/problem/10814
+- Arrays.sort는 배열을, Collections.sort는 Collection을 정렬한다. TimSort는 stable한 특성을 갖고 있다. 
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
