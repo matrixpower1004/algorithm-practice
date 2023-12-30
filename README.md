@@ -217,6 +217,10 @@ int a = x - '0';
 - https://www.acmicpc.net/problem/10814
 - Arrays.sort는 배열을, Collections.sort는 Collection을 정렬한다. TimSort는 stable한 특성을 갖고 있다. 
 
+### 백준 7785 회사에 있는 사람
+* https://www.acmicpc.net/problem/7785
+* Comparator와 Comparable의 사용법을 잘 복습해두자. 
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
