@@ -219,7 +219,28 @@ int a = x - '0';
 
 ### 백준 7785 회사에 있는 사람
 * https://www.acmicpc.net/problem/7785
-* Comparator와 Comparable의 사용법을 잘 복습해두자. 
+* Comparator와 Comparable의 사용법을 잘 복습해두자.
+
+### 백준 1302 베스트셀러
+* https://www.acmicpc.net/problem/1302
+* Comparator 정의 방법을 잘 기억해 두고 자주 연습하자.
+```java
+Comparator<Map.Entry<String, Integer>> valueThenKeyComparator = (o1, o2) -> {
+	if (o2.getValue().equals(o1.getValue())) {
+		return o1.getKey().compareTo(o2.getKey());
+	}
+	return o2.getValue().compareTo(o1.getValue());
+};
+```
+* Map의 메서드 중 `getOrDefault()`는 아래의 로직을 깔끔하게 한줄로 줄여준다. Collection에서 지원하는 메서드가 어떤 게 있는지 조금 더 관심을 가지자.
+```java
+if (books.containsKey(key)) {
+	int currentValue = books.get(key);
+	books.put(key, currentValue + 1);
+} else {
+	books.put(key, 1);
+}
+```
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
