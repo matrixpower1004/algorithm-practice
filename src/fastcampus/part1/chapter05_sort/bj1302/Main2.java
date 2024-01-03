@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter05_sort.bj1302_1;
+package fastcampus.part1.chapter05_sort.bj1302;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * https://www.acmicpc.net/problem/1302
  */
 
-public class Main {
+public class Main2 {
 
     public static void main(String[] args) throws IOException {
 

@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter05_sort.bj18870_2;
+package fastcampus.part1.chapter05_sort.bj18870;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * 백준 18870 좌표 압축
  * https://www.acmicpc.net/problem/18870
  */
-public class Main {
+public class Main2 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
