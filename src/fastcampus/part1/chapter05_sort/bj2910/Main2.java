@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter05_sort.bj2910_2;
+package fastcampus.part1.chapter05_sort.bj2910;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * https://www.acmicpc.net/problem/2910
  * LinkedHashMap을 이용한 풀이
  */
-public class Main {
+public class Main2 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
