@@ -251,7 +251,11 @@ if (books.containsKey(key)) {
 
 ### 백준 1931 회의실 배정
 * https://www.acmicpc.net/problem/1931
-* int 타입의 배열 정렬이 불완전 정렬이긴 하지만 속도는 Boxed 타입에 비해서 확실히 빠르다. 
+* int 타입의 배열 정렬이 불완전 정렬이긴 하지만 속도는 Boxed 타입에 비해서 확실히 빠르다.
+  
+### 백준 1431 시리얼 번호
+* https://www.acmicpc.net/problem/1431
+* char type을 int 값으로 변환하는 방법은 2가지. `Charcter.getIntValue(x)`, `charValue - '0'`. 자주 잊어버리는데 확실히 기억해 두자.
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
