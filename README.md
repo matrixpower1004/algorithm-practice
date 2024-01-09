@@ -257,6 +257,12 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/1431
 * char type을 int 값으로 변환하는 방법은 2가지. `Charcter.getIntValue(x)`, `charValue - '0'`. 자주 잊어버리는데 확실히 기억해 두자.
 
+### 백준 18310 안테나
+* https://www.acmicpc.net/problem/18310
+* 문제에서 요구하는 것은 배열의 가장 중앙값을 구하는 것이었다. 기준위치를 인덱스로 계산해보면 인덱스의 좌축은 인데스 값이 +로, 우측은 -로 게산이 된다는 것을 알 수 있다.
+* 반복되는 패턴이 있을 때, 그 패턴을 빨리 캐치하는 연습을 계속 하자.
+
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)

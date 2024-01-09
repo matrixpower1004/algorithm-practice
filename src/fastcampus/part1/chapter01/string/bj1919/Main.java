@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter01_string.bj1919;
+package fastcampus.part1.chapter01.string.bj1919;
 
 import java.io.BufferedReader;
 import java.io.IOException;

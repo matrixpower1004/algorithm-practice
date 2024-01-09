@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter02_time_complexity.bj10158;
+package fastcampus.part1.chapter02.time_complexity.bj10158;
 
 import java.io.BufferedReader;
 import java.io.IOException;

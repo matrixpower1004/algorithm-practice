@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter01_string.bj1157;
+package fastcampus.part1.chapter01.string.bj1157;
 
 import java.io.*;
 
