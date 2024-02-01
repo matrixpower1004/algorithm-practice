@@ -17,7 +17,7 @@ public class Main {
         int N = Integer.valueOf(st.nextToken());
         int Q = Integer.valueOf(st.nextToken());
 
-        int[][] arr = new int[N + 1][N + 1]; // 입력되는 값을 저잫하는 배열
+        int[][] arr = new int[N + 1][N + 1]; // 입력되는 값을 저장하는 배열
         for (int row = 1; row <= N ; row++) {
             st = new StringTokenizer(br.readLine());
             for (int col = 1; col <= N; col++) {
