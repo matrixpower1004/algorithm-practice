@@ -209,6 +209,7 @@ int a = x - '0';
 - https://www.acmicpc.net/problem/1120
 - 배열의 index는 0부터 다룰지, 1부터 다룰지 확실하게 정하고 코드를 작성하자.
 
+## Chapter 05. 정렬
 ### 백준 1181 단어 정렬
 - https://www.acmicpc.net/problem/1181
 - 중복 제거를 위해서 Set을 이용해서 입력을 받고 -> Set을 List로 변환 후 정렬했는데 변환 시간이 생각보다 오래 걸렸다.
@@ -262,16 +263,25 @@ if (books.containsKey(key)) {
 * 문제에서 요구하는 것은 배열의 가장 중앙값을 구하는 것이었다. 기준위치를 인덱스로 계산해보면 인덱스의 좌측은 인데스 값이 +로, 우측은 -로 계산이 된다는 것을 알 수 있다.
 * 반복되는 패턴이 있을 때, 그 패턴을 빨리 캐치하는 연습을 계속 하자.
 
+## Chapter 06. 구간합
 ### 백준 11660 구간 합 구하기 5
 *  https://www.acmicpc.net/problem/11660
 * 실제 변화량을 바로 기록하는 것이 아니라 실제 변화가 일어나야 하는 지점에 변화량을 기록한 뒤에, 그 각각의 변화량을 각 칸에 반영해 주는 형식을 누적 연산을 통해서 해결할 수 있다. 
 * 단, 항상 지시가 끝난 후에 매번 출력하는 경우에는 이 방법이 통할 수 없고, 모든 지시가 적용된 후에 결과만 구할 때에는 이렇게 누적합 개념을 응용을 해서 범위 연산 처리를 해볼 수 있다.
 * 구간 합에 대한 쿼리만이 아니라 이런 형태로 구간 범위에 대한 변화량에도 응용을 해볼 수 있다.
 
+## Chapter 07. 이분탐색(binary search)
 ### 백준 1920 수 찾기
 * https://www.acmicpc.net/problem/1920
 * Set를 이용하는 방법만이 아니라 Binary Search를 이용하여 원하는 수를 찾는 방법을 배웠다. binary search 는 알고리즘 문제에서 자주 등장하니 잘 학습해 두자.
 * `Integer.valueOf()` 보다 `Integer.parseInt()` 가 근소하게 속도가 빠르지만 null safe 하지는 않다는 단점이 있다. 
+
+### 백준 14425 문자열 집합
+* https://www.acmicpc.net/problem/14425
+* 루프내에서 어떤 연산의 결과를 반복적으로 사용해야 한다면 변수를 이용하자. '자바 성능 튜닝이야기'에도 나오는 내용이다.
+* 이진 탐색에서 문자열을 비교한 결과를 변수에 할당하고 if 문에서 재사용했을 때 미세하더라도 속도의 향상이 있었다. `int compareResult = setS[m].compareTo(q)`
+* BinarySearch를 직접 구현하지 않아도 Arrays 클래스의 binarySearch() 메서드를 이용하여 문제를 풀수 있다. binarySearch() 메서드는 주어진 key가 존재한다면 그 key의 index 값을 반환한다.
+* https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
