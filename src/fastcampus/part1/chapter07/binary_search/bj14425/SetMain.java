@@ -1,35 +1,34 @@
-package fastcampus.part1.chapter7.binary_search.bj14425;
+package fastcampus.part1.chapter07.binary_search.bj14425;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 /**
  * 백준 14425 문자열 집합
  * https://www.acmicpc.net/problem/14425
- * 3. Arrays의 binarySearch() 메서드를 이용한 풀이
+ * 2. Set을 이용한 풀이
  */
-public class Main2 {
-    static String[] setS;
+public class SetMain {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
-        setS = new String[N];
+
+        Set setS = new HashSet();
         for (int i = 0; i < N; i++) {
-            setS[i] = br.readLine();
+            setS.add(br.readLine());
         }
-        // binary search를 하기 전에 정렬을 먼저해야 하는 것을 잊지 말자.
-        Arrays.sort(setS);
 
         int answer = 0;
         for (int i = 0; i < M; i++) {
             String q = br.readLine();
-            if (Arrays.binarySearch(setS, q) >= 0)  {
+            if (setS.contains(q)) {
                 answer++;
             }
         }

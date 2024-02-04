@@ -283,6 +283,11 @@ if (books.containsKey(key)) {
 * BinarySearch를 직접 구현하지 않아도 Arrays 클래스의 binarySearch() 메서드를 이용하여 문제를 풀수 있다. binarySearch() 메서드는 주어진 key가 존재한다면 그 key의 index 값을 반환한다.
 * https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
 
+### 백준 2295 세 수의 합
+* https://www.acmicpc.net/problem/2295
+* 식을 변형해서 풀 생각을 하지 못했다. $A+B+C=X$ -> $A+B = X-C$
+* 3중 for문을 돌아도 index 탐색 순서와 비교 로직에 따라서 제한 시간 내에도 풀 수 있다는 것을 배웠다. https://www.acmicpc.net/source/64583452
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
