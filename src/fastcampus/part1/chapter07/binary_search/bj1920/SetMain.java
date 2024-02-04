@@ -1,4 +1,4 @@
-package fastcampus.part1.chapter7.binary_search.bj1920;
+package fastcampus.part1.chapter07.binary_search.bj1920;
 
 import java.io.BufferedReader;
 import java.io.IOException;
