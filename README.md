@@ -288,6 +288,11 @@ if (books.containsKey(key)) {
 * 식을 변형해서 풀 생각을 하지 못했다. $A+B+C=X$ -> $A+B = X-C$
 * 3중 for문을 돌아도 index 탐색 순서와 비교 로직에 따라서 제한 시간 내에도 풀 수 있다는 것을 배웠다. https://www.acmicpc.net/source/64583452
 
+### 백준 2470 두 용액
+* https://www.acmicpc.net/problem/2470
+* 배열의 index에 들어있는 값을 남겨야 할 때와 배열의 index를 남겨야 할 때를 잘 구분해자. 
+* TreeSet의 floor()와 ceiling() 메서드를 이용하면 $O(NlogN)$ 시간 복잡도로 근사값을 찾을 수 있다는 것을 배웠다.
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
