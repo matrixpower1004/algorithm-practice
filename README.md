@@ -293,6 +293,12 @@ if (books.containsKey(key)) {
 * 배열의 index에 들어있는 값을 남겨야 할 때와 배열의 index를 남겨야 할 때를 잘 구분해자. 
 * TreeSet의 floor()와 ceiling() 메서드를 이용하면 $O(NlogN)$ 시간 복잡도로 근사값을 찾을 수 있다는 것을 배웠다.
 
+### 백준 10816 숫자 카드 2
+* https://www.acmicpc.net/problem/10816
+* Map의 메서드 중 getOrDefault()가 있다는 것을 학습했으면서도 정작 없는 값을 찾을 때 if문 내에서 getContainsKey() 메서드를 사용했다.
+* Binary search를 경계값을 찾는데 응용할 수 있다는 것을 배웠다.
+* 메모리가 넉넉하다면 1천만 이상 크기의 배열도 생생해서 인덱싱을 이용한 풀이도 시도해 볼 수 있다.  
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
