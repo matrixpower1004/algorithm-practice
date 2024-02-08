@@ -297,7 +297,12 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/10816
 * Map의 메서드 중 getOrDefault()가 있다는 것을 학습했으면서도 정작 없는 값을 찾을 때 if문 내에서 getContainsKey() 메서드를 사용했다.
 * Binary search를 경계값을 찾는데 응용할 수 있다는 것을 배웠다.
-* 메모리가 넉넉하다면 1천만 이상 크기의 배열도 생생해서 인덱싱을 이용한 풀이도 시도해 볼 수 있다.  
+* 메모리가 넉넉하다면 1천만 이상 크기의 배열도 생생해서 인덱싱을 이용한 풀이도 시도해 볼 수 있다.
+
+## Parametric search
+### 백준 2805 나무 자르기
+* https://www.acmicpc.net/problem/2805
+* 처음에 주어진 수들의 평균을 구해서 parametric search의 시작 파라미터로 했는데 예제처럼 원하는 나무의 크기가 평균보다 작다면 조건을 만족할 수 있지만, 원하는 나무의 크기가 평균보다 크다면 조건을 만족할 수 없는 파라미터가 된다. 이것을 생각하지 못했다.  
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
