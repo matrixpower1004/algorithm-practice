@@ -47,7 +47,6 @@ public class Main {
 
     private static boolean isPossible(int[] tree, int cutHeight, int needHeight) {
         long sum = 0;
-        int size = tree.length;
         for (int h : tree) {
             if (h > cutHeight) {
                 sum += h - cutHeight;
