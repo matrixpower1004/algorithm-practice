@@ -319,6 +319,11 @@ if (books.containsKey(key)) {
 ### 백준 2343 기타 레슨
 * https://www.acmicpc.net/problem/2343
 * 블루레이 사이즈를 판정하는 로직에서 블루레이에 담을 수 없는 경우를 앞에서 모두 필터링 했다면 마지막에는 `return true;`를 했어야 하는데 `return count >= maxBluRayCount;`를 해서 항상 false가 반환되는 오류가 있었다.
+  
+### 백준 2792 보석 상자
+* https://www.acmicpc.net/problem/2792
+* 나누어 떨어지는 경우와 나누어 떨어지지 않는 경우를 분류하기 위해 if - else 를 사용해도 되지만 간단한게 `(color + divideCount - 1) / divideCount`와 같이 나눌 수 -1을 해서 더해주고,다시 나눌 수로 나눠주면 된다.
+* 문제 분석을 잘못해서 보석을 학생들에게 차례대로 나눠주는 오류가 있었다. 
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
