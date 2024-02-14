@@ -17,16 +17,16 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.valueOf(br.readLine()); // 입력될 수의 개수
-        int num[] = new int[N];
-        boolean exist[] = new boolean[MAX]; // 입력되는 수를 index로 사용
+        int N = Integer.parseInt(br.readLine()); // 입력될 수의 개수
+        int[] num = new int[N];
+        boolean[] exist = new boolean[MAX]; // 입력되는 수를 index로 사용
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
-            int value = Integer.valueOf(st.nextToken());
+            int value = Integer.parseInt(st.nextToken());
             num[i] = value;
             exist[value] = true;
         }
-        int X = Integer.valueOf(br.readLine()); // 요구하는 두 수의 합
+        int X = Integer.parseInt(br.readLine()); // 요구하는 두 수의 합
 
         int result = 0; // 정답을 카운트
 
