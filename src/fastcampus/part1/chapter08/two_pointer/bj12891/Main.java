@@ -38,7 +38,7 @@ public class Main{
             if (isValid(count, reqCount)) {
                 ans++;
             }
-            // 이번 윈도의의 첫 값을 제거. 지금 제일 앞에 있는 값이 다음 윈도우에서는 빠져야 한다.
+            // 이번 윈도우의 첫 값을 제거. 지금 제일 앞에 있는 값이 다음 윈도우에서는 빠져야 한다.
             count[charToIndex(dnaStr[i - P + 1])]--;
         }
         System.out.println(ans);
