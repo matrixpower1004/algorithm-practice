@@ -370,6 +370,11 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/10025
 * 좌표인 X = 0 ~ 1,000,000 인데, 좌우로 닿을 수 있는 거리인 K = 1 ~ 2,000,000인 문제였다. K가 X보다 큰 경우를 생각하지 못하고 예제 케이스만 보고 index을 구현했다가 IndexOutOfBoundsException 에러을 계속 만났다.
 
+### 백준 13422 도둑
+* https://www.acmicpc.net/problem/13422
+* 슬라이딩 윈도우를 이용해서 비교 대상 구간합을 미리 구해 놓고 다음 구간합을 구할 때 `prefixSum -= house[i - 1]`로 현재 `index - 1` 을 해주어야 했는데 현재 index인 i를 빼주는 실수는 했다.
+* 환형 index 구조를 계산해야 한다면 `(i + M - 1) % N`으로 계산해주면 된다. N = 10, i = 8, M = 3이라고 가정하면 8 + 3 - 1 = 11 이므로 11 % 10을 하면 1이 나와서 환형 index 구조를 이용할 수 있게 된다.  
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
