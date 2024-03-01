@@ -7,7 +7,6 @@ public class MySingleLinkedList<E> {
     private Node<E> lastNode = null;
 
     public static class Node<E> {
-
         E item;
         Node<E> next;
 
@@ -134,4 +133,5 @@ public class MySingleLinkedList<E> {
         sb.append("]");
         return sb.toString();
     }
+
 }
