@@ -3,6 +3,7 @@ package fastcampus.part1.chapter09.list.myarraylist;
 import java.util.Arrays;
 
 public class MyArrayList<E> {
+
     private static final int DEFAULT_CAPACITY = 10;
     private int size = 0;
     private Object[] data;
@@ -83,5 +84,4 @@ public class MyArrayList<E> {
         sb.append("]");
         return sb.toString();
     }
-
 }
