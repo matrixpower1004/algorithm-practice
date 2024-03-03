@@ -53,7 +53,7 @@ public class MyArrayList<E> {
             growCapacity();
         }
         int copyLength = size - idx;
-        //  원본 배열, 원보 배열의 시작 index, 대상 배열, 대상 배열의 시작 인덱스, 길이
+        //  원본 배열, 원본 배열의 시작 index, 대상 배열, 대상 배열의 시작 인덱스, 길이
         System.arraycopy(data, idx, data, idx + 1, copyLength);
         data[idx] = element;
         size++;
