@@ -380,6 +380,11 @@ if (books.containsKey(key)) {
 * 중복을 체크하는 배열를 만들 때 수열의 수를 index로 삼겠다고 생각했으면서 정작 배열의 크기는 수열의 길이인 N으로 만드는 실수가 있었다.
 * `1개 이상의 수를 뽑았을 때 같은 수가 여러 번 등장하지 않는 경우의 수`라는 조건을 이해하는데 시간이 오래 걸렸다.
 
+### 백준 1406 에디터
+* https://www.acmicpc.net/problem/1406
+* 삽입 및 삭제가 많은 문제 유형이라 LinkedList를 이용하지 않으면 시간 초과를 받게 된다. 처음에 AyyarList를 이용하여 풀었고 계속 시간 초과를 받았다.
+* ListIterator를 선언해 놓고 Iterator를 사용하지 않고 직접 `list.add()`를 해서 `concurrentmodificationexception`이 발생하는 실수가 있었다.  
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
