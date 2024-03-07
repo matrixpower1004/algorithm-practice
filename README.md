@@ -385,6 +385,10 @@ if (books.containsKey(key)) {
 * 삽입 및 삭제가 많은 문제 유형이라 LinkedList를 이용하지 않으면 시간 초과를 받게 된다. 처음에 AyyarList를 이용하여 풀었고 계속 시간 초과를 받았다.
 * ListIterator를 선언해 놓고 Iterator를 사용하지 않고 직접 `list.add()`를 해서 `concurrentmodificationexception`이 발생하는 실수가 있었다.  
 
+### 백준 15828 Router
+* https://www.acmicpc.net/problem/15828
+* `java.util.concurrent` 패캐지의 `LinkedBlockingQueue`를 이용하여 버퍼사이즈를 제한할 수 있다는 것을 배웠다. 하지만 concurrent 패키지는 멀티스레드 환경에서 동시성 문제를 해결하기 위한 패키지이므로 일반적인 환경에서는 성능이 조금 느릴 수 있다.
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
