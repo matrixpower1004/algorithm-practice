@@ -389,6 +389,11 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/15828
 * `java.util.concurrent` 패캐지의 `LinkedBlockingQueue`를 이용하여 버퍼사이즈를 제한할 수 있다는 것을 배웠다. 하지만 concurrent 패키지는 멀티스레드 환경에서 동시성 문제를 해결하기 위한 패키지이므로 일반적인 환경에서는 성능이 조금 느릴 수 있다.
 
+### 백준 2430 AC
+* https://www.acmicpc.net/problem/5430
+* R 명령이 입력되었을 때 시간 복잡도 계산을 하지 못하고 무조건 뒤집는 로직을 구현해서 시간 초과르 받았다.
+* 숫자가 1자리 숫자만 있는 것이 아닌데 역순 출력해야 하는 경우 StringBuilder로 변환해 놓고 이걸 sb.reverse()로 뒤집었는데 1자리 숫자가 아니라면 당연히 틀린 결과가 나온다. 이 생각의 오류를 찾는데 시간이 오래 걸렸다.
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
