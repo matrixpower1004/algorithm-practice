@@ -88,6 +88,7 @@ int num = Character.getNumericValue(c1);
 - 굳이 배열을 정렬할 필요 없이 우선순위 큐를 이용하면 배열의 정렬에 드는 O(nlogn)의 시간을 줄일 수 있다.
  
 # 패스트캠퍼스 알고리즘 코딩테스트 with Java 강의
+## Part 1. 자료구조와 알고리즘 #1
 ## Chapter 01. 문자열
 ### 백준 2744 대소문자 변환
 - https://www.acmicpc.net/problem/2744
@@ -299,7 +300,7 @@ if (books.containsKey(key)) {
 * Binary search를 경계값을 찾는데 응용할 수 있다는 것을 배웠다.
 * 메모리가 넉넉하다면 1천만 이상 크기의 배열도 생생해서 인덱싱을 이용한 풀이도 시도해 볼 수 있다.
 
-## Parametric search
+### Parametric search
 ### 백준 2805 나무 자르기
 * https://www.acmicpc.net/problem/2805
 * 처음에 주어진 수들의 평균을 구해서 parametric search의 시작 파라미터로 했는데 예제처럼 원하는 나무의 크기가 평균보다 작다면 조건을 만족할 수 있지만, 원하는 나무의 크기가 평균보다 크다면 조건을 만족할 수 없는 파라미터가 된다. 이것을 생각하지 못했다.
@@ -380,11 +381,14 @@ if (books.containsKey(key)) {
 * 중복을 체크하는 배열를 만들 때 수열의 수를 index로 삼겠다고 생각했으면서 정작 배열의 크기는 수열의 길이인 N으로 만드는 실수가 있었다.
 * `1개 이상의 수를 뽑았을 때 같은 수가 여러 번 등장하지 않는 경우의 수`라는 조건을 이해하는데 시간이 오래 걸렸다.
 
+## Chapter09. 리스트(List)
 ### 백준 1406 에디터
 * https://www.acmicpc.net/problem/1406
 * 삽입 및 삭제가 많은 문제 유형이라 LinkedList를 이용하지 않으면 시간 초과를 받게 된다. 처음에 AyyarList를 이용하여 풀었고 계속 시간 초과를 받았다.
 * ListIterator를 선언해 놓고 Iterator를 사용하지 않고 직접 `list.add()`를 해서 `concurrentmodificationexception`이 발생하는 실수가 있었다.  
 
+## Part 2. 자료구조와 알고리즘 #2
+## Chapter 01. 큐(Queue)
 ### 백준 15828 Router
 * https://www.acmicpc.net/problem/15828
 * `java.util.concurrent` 패캐지의 `LinkedBlockingQueue`를 이용하여 버퍼사이즈를 제한할 수 있다는 것을 배웠다. 하지만 concurrent 패키지는 멀티스레드 환경에서 동시성 문제를 해결하기 위한 패키지이므로 일반적인 환경에서는 성능이 조금 느릴 수 있다.
@@ -393,6 +397,16 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/5430
 * R 명령이 입력되었을 때 시간 복잡도 계산을 하지 못하고 무조건 뒤집는 로직을 구현해서 시간 초과르 받았다.
 * 숫자가 1자리 숫자만 있는 것이 아닌데 역순 출력해야 하는 경우 StringBuilder로 변환해 놓고 이걸 sb.reverse()로 뒤집었는데 1자리 숫자가 아니라면 당연히 틀린 결과가 나온다. 이 생각의 오류를 찾는데 시간이 오래 걸렸다.
+* StringTokenizer의 delimeter로 `"[,]"` 3개 문자를 모두 입력한다는 아이디어를 떠올리지 못하고 `"[]"` 문자를 먼저 remove 한다는 아이디어에 매몰되었다.
+
+## Chapter 02. 스택(Stack)
+### 백준 9012 괄호
+* https://www.acmicpc.net/problem/9012
+* 괄호의 종류가 하나이므로 count를 이용하여 풀어볼 수 있다. ex) '(' 입력시 count 증가, ')' 입력시 count 감소.
+
+### 백준 10828 스택
+* https://www.acmicpc.net/problem/10828
+* 복잡한 구현 문제가 아니므로 굳이 스택을 사용하지 않고 배열과 index 조작만으로도 풀이할 수 있다.
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
