@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ *  백준 9012 괄호: https://www.acmicpc.net/problem/9012
+ */
+
 public class Main2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
