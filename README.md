@@ -408,6 +408,10 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/10828
 * 복잡한 구현 문제가 아니므로 굳이 스택을 사용하지 않고 배열과 index 조작만으로도 풀이할 수 있다.
 
+### 백준 10799 쇠막대기
+* https://www.acmicpc.net/problem/10799
+* 쇠막대기의 시작 위치와 끝위치를 index를 이용해서 풀어볼 생각을 하지 못했다. 또한 레이저의 개수 합을 구간합을 이용해서 미리 구한다는 아이디어를 떠올리지 못했다.
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
