@@ -412,6 +412,10 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/10799
 * 쇠막대기의 시작 위치와 끝위치를 index를 이용해서 풀어볼 생각을 하지 못했다. 또한 레이저의 개수 합을 구간합을 이용해서 미리 구한다는 아이디어를 떠올리지 못했다.
 
+### 백준 5397 키로거
+* https://www.acmicpc.net/problem/5397
+* 커서의 위치를 기준으로 List + Itrator 조합이 아닌 스택 2개를 이용하여 풀이하는 방법을 배웠다. 
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
