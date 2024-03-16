@@ -414,7 +414,11 @@ if (books.containsKey(key)) {
 
 ### 백준 5397 키로거
 * https://www.acmicpc.net/problem/5397
-* 커서의 위치를 기준으로 List + Itrator 조합이 아닌 스택 2개를 이용하여 풀이하는 방법을 배웠다. 
+* 커서의 위치를 기준으로 List + Itrator 조합이 아닌 스택 2개를 이용하여 풀이하는 방법을 배웠다.
+  
+### 백준 16120 PPAP
+* https://www.acmicpc.net/problem/16120
+* PPAP 문자열이 나오면 계속 P로 치환을 하고 마지막에 P 문자열이 남는 것으 체크해야 하는데 PPAP를 한번만 치환하는 아이디어의 오류가 있었다.
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
