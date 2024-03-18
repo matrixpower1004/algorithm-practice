@@ -419,6 +419,11 @@ if (books.containsKey(key)) {
 ### 백준 16120 PPAP
 * https://www.acmicpc.net/problem/16120
 * PPAP 문자열이 나오면 계속 P로 치환을 하고 마지막에 P 문자열이 남는 것으 체크해야 하는데 PPAP를 한번만 치환하는 아이디어의 오류가 있었다.
+* 
+### 백준 2841 외계인의 기타 연주
+* https://www.acmicpc.net/problem/2841
+* 처음에 2차원 배열로 푸는 아이디어를 떠올렸는데 `Deque<Integer>[] pushed` 와 같은 형태로 Collection 배열을 만들 수 있다.
+
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
