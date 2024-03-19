@@ -424,6 +424,9 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/2841
 * 처음에 2차원 배열로 푸는 아이디어를 떠올렸는데 `Deque<Integer>[] pushed` 와 같은 형태로 Collection 배열을 만들 수 있다.
 
+### 백준 17298 오큰수
+- https://www.acmicpc.net/problem/17298
+- 예전에 한번 풀었는데 저장된 배열의 오른쪽에서 왼쪽으로 탐색하면서 오큰수 후보만 스택에 남긴다는 아이디어를 바로 떠올리지 못했다. 
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
