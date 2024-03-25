@@ -1,4 +1,4 @@
-package fastcampus.part2.chapter1.stack.bj6918;
+package fastcampus.part2.chapter1.stack.bj6198;
 
 
 import java.io.BufferedReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 백준 6918 옥상 정원 꾸미기: https://www.acmicpc.net/problem/6198
+ * 백준 6198 옥상 정원 꾸미기: https://www.acmicpc.net/problem/6198
  */
 public class Main {
 
