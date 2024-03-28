@@ -450,6 +450,13 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/15657
 * 비내림차순과 오름차순의 차이점을 파악하지 못했다. 비내림차순이란 재귀호출 시 현재의 자기 자신을 포함할지 여부가 오름차순과 다르다. 
 
+
+## Part 3. 자료구조와 알고리즘 #3
+## Chapter 01. 그래프 탐색 - BFS, DFS
+### 백준 1260 DFS와 BFS: https://www.acmicpc.net/problem/1260
+* 인접 리스트 방식으로 구현할 때 배열의 생성은 N + 1개로 해놓고 ArraysList의 sort는 N개까지만 하는 오류가 있었다.
+
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
