@@ -456,6 +456,13 @@ if (books.containsKey(key)) {
 ### 백준 1260 DFS와 BFS: https://www.acmicpc.net/problem/1260
 * 인접 리스트 방식으로 구현할 때 배열의 생성은 N + 1개로 해놓고 ArraysList의 sort는 N개까지만 하는 오류가 있었다.
 
+### 백준 2606 바이러스
+* https://www.acmicpc.net/problem/2606
+* Queue + LinkedList 조합이 Deque + ArrayDeque 조합보다 근소하게 빠른 성능을 보였다.
+
+### 백준 2573 빙산
+* https://www.acmicpc.net/problem/2573
+* 빙산이 있는 좌표만 별도의 클래스로 분리하여 관리한다는 아이디어를 떠올리지 못했다.
 
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
