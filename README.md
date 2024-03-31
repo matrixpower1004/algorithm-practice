@@ -464,6 +464,10 @@ if (books.containsKey(key)) {
 * https://www.acmicpc.net/problem/2573
 * 빙산이 있는 좌표만 별도의 클래스로 분리하여 관리한다는 아이디어를 떠올리지 못했다.
 
+### 백준 1941 소문난 칠공주
+* https://www.acmicpc.net/problem/1941
+* 2차원 배열을 1차원 배열로 치환해서 백트래킹 할 수 있다는 것을 배웠다.
+
 ## Part 5. 단기완성 알고리즘
 ## 완전 탐색(Brute Force)
 ### 백준 15649 N과 M(1) ~ 백준 15652N과 M(4)
