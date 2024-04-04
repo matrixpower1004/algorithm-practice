@@ -1,4 +1,4 @@
-package fastcampus.part2.chapter3.tree.bj11725;
+package fastcampus.part2.chapter4.tree.bj11725;
 
 import java.io.BufferedReader;
 import java.io.IOException;
